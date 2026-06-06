@@ -32,6 +32,17 @@ python3 Gasbuddy.py --location "Lubbock, TX" --fuel diesel
 
 The app opens at <http://localhost:8501>.
 
+### Share a public link (one command)
+
+```bash
+./share.sh
+```
+
+Starts the app and a free [Cloudflare tunnel](https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/),
+then prints a public `https://….trycloudflare.com` URL anyone can use. It runs
+on **your** machine's IP, so GasBuddy won't block it (unlike cloud hosting).
+Press Ctrl+C to stop. Needs `cloudflared` (install hint is printed if missing).
+
 ## How it works
 
 1. `Gasbuddy.py` — the scraper. Loads GasBuddy in headless Chromium, lifts the
