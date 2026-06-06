@@ -60,4 +60,3 @@ The app opens at <http://localhost:8501>.
 | `Gasbuddy.py` | Scraper engine + CLI |
 | `app.py` | Streamlit web UI |
 | `requirements.txt` | Python dependencies |
-| `packages.txt` | apt packages (only needed for a cloud deploy attempt) |
