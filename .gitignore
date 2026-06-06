@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# macOS
+.DS_Store
+
+# Generated scrape output + debug artifacts
+*.csv
+debug_*.txt
+debug_*.json
+debug_*.html
+
+# Local tooling / secrets
+.claude/
+.streamlit/secrets.toml

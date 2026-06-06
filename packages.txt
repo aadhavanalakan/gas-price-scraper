@@ -1,0 +1,19 @@
+# apt packages for running headless Chromium on a Debian-based host
+# (only relevant if you attempt a Streamlit Community Cloud deploy).
+# Note: cloud deploys are likely to be IP-blocked by GasBuddy — see README.
+libnss3
+libnspr4
+libatk1.0-0
+libatk-bridge2.0-0
+libcups2
+libdrm2
+libxkbcommon0
+libxcomposite1
+libxdamage1
+libxfixes3
+libxrandr2
+libgbm1
+libasound2
+libpango-1.0-0
+libcairo2
+libatspi2.0-0
