@@ -41,25 +41,6 @@ TMP = Path(tempfile.gettempdir())
 
 st.set_page_config(page_title="Gas Price Scraper", page_icon="⛽", layout="centered")
 
-
-@st.cache_resource(show_spinner="Setting up the headless browser (first run only)…")
-def _ensure_chromium() -> bool:
-    """
-    On a fresh host (e.g. Streamlit Community Cloud), `pip install playwright`
-    installs the Python package but NOT the Chromium binary it drives. Run the
-    installer once per container — it's a no-op locally where Chromium already
-    exists. packages.txt provides the matching system libraries.
-    """
-    try:
-        subprocess.run([sys.executable, "-m", "playwright", "install", "chromium"],
-                       check=False, capture_output=True, timeout=600)
-    except Exception:
-        pass
-    return True
-
-
-_ensure_chromium()
-
 # --------------------------------------------------------------------------- #
 # Styling
 # --------------------------------------------------------------------------- #
